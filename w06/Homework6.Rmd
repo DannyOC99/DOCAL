@@ -1,0 +1,361 @@
+---
+title: "Homework 6: Plotting Life Expectancy and Income using Plotly"
+author: "Daniel OCallaghan"
+date: ""
+output:
+  html_document: 
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    fig_width: 6
+    fig_caption: yes
+    number_sections: yes
+    toc_collapsed: yes
+    code_folding: hide
+    code_download: yes
+    smooth_scroll: true
+    theme: readable
+  pdf_document: 
+    toc: yes
+    toc_depth: 4
+    fig_caption: yes
+    number_sections: yes
+    fig_width: 5
+    fig_height: 4
+---
+<style type="text/css">
+
+/* Table of content - navigation */
+div#TOC li {
+    list-style:none;
+    background-color:black;
+    background-image:none;
+    background-repeat:none;
+    background-position:0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightblue;
+}
+
+h1.title {
+  font-size: 24px;
+  color: Navy;
+  text-align: center;
+}
+
+h4.author { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: blue;
+  text-align: center;
+}
+h4.date { /* Header 4 - and the author and data headers use this too  */
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: blue;
+  text-align: center;
+}
+h1 { /* Header 3 - and the author and data headers use this too  */
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+    color: blue;
+    text-align: center;
+}
+h2 { /* Header 3 - and the author and data headers use this too  */
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: Navy;
+    text-align: left;
+}
+
+h3 { /* Header 3 - and the author and data headers use this too  */
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    color: Navy;
+    text-align: left;
+}
+
+h4 { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: Navy;
+    text-align: left;
+}
+</style>
+
+```{r setup, include=FALSE}
+options(repos = list(CRAN="http://cran.rstudio.com/"))
+if (!require("tidyverse")) {
+   install.packages("tidyverse")
+   library(tidyverse)
+}
+if (!require("knitr")) {
+   install.packages("knitr")
+   library(knitr)
+}
+if (!require("cowplot")) {
+   install.packages("cowplot")
+   library(cowplot)
+}
+if (!require("latex2exp")) {
+   install.packages("latex2exp")
+   library(latex2exp)
+}
+if (!require("plotly")) {
+   install.packages("plotly")
+   library(plotly)
+}
+if (!require("gapminder")) {
+   install.packages("gapminder")
+   library(gapminder)
+}
+if (!require("png")) {
+    install.packages("png")    
+    library("png")
+}
+if (!require("RCurl")) {
+    install.packages("RCurl")    
+    library("RCurl")
+}
+if (!require("colourpicker")) {
+    install.packages("colourpicker")              
+    library("colourpicker")
+}
+if (!require("gganimate")) {
+    install.packages("gganimate")              
+    library("gganimate")
+}
+if (!require("gifski")) {
+    install.packages("gifski")              
+    library("gifski")
+}
+if (!require("magick")) {
+    install.packages("magick")              
+    library("magick")
+}
+if (!require("grDevices")) {
+    install.packages("grDevices")              
+    library("grDevices")
+}
+if (!require("jpeg")) {
+    install.packages("jpeg")              
+    library("jpeg")
+}
+if (!require("ggridges")) {
+    install.packages("ggridges")              
+    library("ggridges")
+}
+if (!require("plyr")) {
+    install.packages("plyr")              
+    library("plyr")
+}
+if (!require("ggiraph")) {
+    install.packages("ggiraph")              
+    library("ggiraph")
+}
+if (!require("highcharter")) {
+    install.packages("highcharter")              
+    library("highcharter")
+}
+if (!require("forecast")) {
+    install.packages("forecast")              
+    library("forecast")
+}
+## 
+knitr::opts_chunk$set(echo = TRUE,       
+                      warning = FALSE,   
+                      result = TRUE,   
+                      message = FALSE,
+                      comment = NA)
+```
+
+
+
+# Modifying the dataset
+
+## Bringing in the datasets 
+
+To work with the Countries dataset, we will be bringing in Country Info from my github. We will also be limiting it to 2015 for our plot of life expectancy and income in 2015. 
+```{r dataset}
+Countries<-read.csv(file="https://dannyoc99.github.io/DOCAL/dataset/Country%20Info.csv")
+Countries_2015<-filter(Countries,year==2015)%>%mutate(PolutionK=pop/1000)
+```
+
+# Looking into the 2015 dataset
+
+```{r data}
+DT::datatable(Countries_2015, fillContainer = FALSE, options = list(pageLength = 11))
+```
+
+# Graphing Life Expectancy and Income during 2015
+
+```{r 2015plot}
+plot.life<-Countries_2015$lifeExp
+plot.pop<-Countries_2015$PolutionK
+plot.region<-Countries_2015$continent
+plot.gdp<-Countries_2015$gdpPercap
+sizeref <- max(plot.pop)/1000
+plot_ly(
+    data = Countries_2015,
+    x = ~plot.life,  # Horizontal axis 
+    y = ~plot.gdp,   # Vertical axis 
+    color = ~factor(plot.region),  # must be a numeric factor
+     hovertext = ~Countries_2015$Country,
+      text= ~Countries_2015$pop,     # show the species in the hover text
+     ## using the following hovertemplate() to add the information of the
+     ## Two numerical variables to the hover text.
+     hovertemplate = paste('<i><b>Income<b></i>: %{y}',
+                           '<br><b>Life Expectancy</b>:  %{x}',
+                           '<br><b>Population: %{text}</b>',
+                           '<br><b>Country: %{hovertext}</b>'),
+     alpha  = 0.9,
+     marker = list(size = ~plot.pop, sizemode = 'area',sizeref=sizeref, opacity=0.5,fill='tozeroy' ),
+     type = "scatter",
+     mode = "markers",
+     ## graphic size
+     width = 700,
+    height = 500) %>%
+      layout(  
+      ### Title 
+      title =list(text = "Life Expectancy vs Income in 2015", 
+                  font = list(family = "Times New Roman",  # HTML font family  
+                                size = 18,
+                               color = "red")), 
+      ### legend
+      legend = list(title = list(text = 'Continent',
+                                 font = list(family = "Courier New",
+                                               size = 14,
+                                              color = "green")),
+                    bgcolor = "ivory",
+                    bordercolor = "navy",
+                    groupclick = "togglegroup",  # one of  "toggleitem" AND "togglegroup".
+                    orientation = "v"  # Sets the orientation of the legend.
+                    ),      ## Background
+      plot_bgcolor ='#f7f7f7', 
+      ## Axes labels
+             xaxis = list( 
+                    title=list(text = 'Life Expectancy',
+                               font = list(family = 'Arial')),
+                    zerolinecolor = 'red', 
+                    zerolinewidth = 2, 
+                    gridcolor = 'white'), 
+            yaxis = list( 
+                    title=list(text = 'Income',
+                               font = list(family = 'Arial')),
+                    zerolinecolor = 'purple', 
+                    zerolinewidth = 2, 
+                    gridcolor = 'white'),
+       ## annotations
+       annotations = list(  
+                     x = .4,   # between 0 and 1. 0 = left, 1 = right
+                     y = .9,   # between 0 and 1, 0 = bottom, 1 = top
+                  font = list(size = 12,
+                              color = "darkred"),   
+                  text = "The point size 
+          is proportional 
+              to the population size
+                  
+                  
+                  
+                  
+                  
+                  
+                  ",   
+                  xref = "paper",  # "container" spans the entire `width` of the 
+                                   #  lot. "paper" refers to the width of the 
+                                   #  plotting area only. yref = "paper",  
+                                   #  same as xref.
+               xanchor = "center", #  horizontal alignment with respect to its x position
+               yanchor = "bottom", #  similar to xanchor  
+             showarrow = FALSE))
+```
+
+Looking at the graph, we have a scatter plot of Life Expectancy and Income. By adding the continent as a color reference and population size as a size reference we can get a 4D look at a 2D plot. From this view, we can see that African Countries consistently have lower life expectancy. Additionally, we can see an exponential relationship between life expectancy and income. Additionally we can see that European countries have more consistent population sizes than the other continents. Finally, the graph lets us see that the GDP Per Capita has a very large margin, as most of the countries do not even make it to the first tick mark of the graph showing many outlier countries in terms of GDP.
+
+
+# Animatee Life Expectancies vs Income 
+
+```{r animate}
+
+plot.life<-Countries$lifeExp
+plot.pop<-Countries$pop
+plot.region<-Countries$continent
+plot.gdp<-Countries$gdpPercap
+plot.year<-Countries$year
+
+pal.IBM <- c("#332288", "#117733", "#0072B2","#D55E00", "#882255")
+pal.IBM <- setNames(pal.IBM, c("Asia", "Europe", "Africa", "Americas", "Oceania"))
+
+
+fig <- Countries %>%
+  plot_ly(
+    x = ~plot.gdp, 
+    y = ~plot.life, 
+    size = ~(2*log(plot.pop)-11)^2,
+    color = ~plot.region, 
+    colors = pal.IBM,   # custom colors
+    #marker = list(size = ~(log(pop)-10),  sizemode = 'area'),
+    frame = ~plot.year,      # the time variable to
+    # to display in the hover
+    text = ~paste("Country:", Country,
+                  "<br>Continent:", continent,
+                  "<br>Year:", year,
+                  "<br>LifeExp:", lifeExp,
+                  "<br>Pop:", pop,
+                  "<br>gdpPerCap:", gdpPercap),
+    hoverinfo = "text",
+    type = 'scatter',
+    mode = 'markers'
+  )
+fig <- fig %>% 
+layout(  
+      ### Title 
+      title =list(text = "Life Expectancy vs Income in 2015", 
+                  font = list(family = "Times New Roman",  # HTML font family  
+                                size = 18,
+                               color = "red")), 
+      ## Axes labels
+             xaxis = list( 
+                    title=list(text = 'Income',
+                               font = list(family = 'Arial')),
+                    zerolinewidth = 2, 
+                    gridcolor = 'white'), 
+            yaxis = list( 
+                    title=list(text = 'Life Expectancy',
+                               font = list(family = 'Arial')),
+                    zerolinewidth = 2, 
+                    gridcolor = 'white')
+    
+  )
+
+fig
+```
+
+By animating the graph, we have yet another dimension added to our 2-D graph, year. Whilst all of the 2015 conclusions hold mostly the same, something interesting about the year factor is that GDP and income was not always an exponential relationship. By increasing the years and starting at a base, we can see it used to be more of a cluster of points without a real pattern, and the closer to the present we get, the stronger that exponential relationship gets.
+
+# Looking at the mean population size across Continents in 2015
+
+```{r box}
+barplotdata = aggregate(Countries_2015[,6], by = list(Countries_2015$continent), FUN = mean)
+plot_ly(
+  data = barplotdata,
+   x = ~Group.1,
+   y = ~x,
+   type = "bar",
+   name = "Average Population Size by Country",
+   ## graphic size
+   width = 700,
+   height = 400) %>%
+    layout( yaxis = list(title ="Mean"),
+            xaxis = list(title = "Continent"),
+            title = "Average Population Size by Country",
+                  ## margin of the plot
+      margin = list(
+              b = 50,
+              l = 100,
+              t = 120,
+              r = 50
+      ))
+```
+
+Overall, I think it is quite hard to gain extremely valuable information out of the sizes of marks on a scatter plot, so I thought I would make the box plot for mean population size per continent to better see this relationship. Overall, we get a lot more data from this box plot. We can see that Asia has the highest average population size, Oceania has the smallest, and Africa and Europe have quite similar averages.
+
