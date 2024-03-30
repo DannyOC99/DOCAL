@@ -1,0 +1,327 @@
+---
+title: "Basic Charts with Tableau"
+author: "Danny OCallaghan"
+date: "West Chester University "
+output:
+  html_document: 
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    code_folding: hide
+    code_download: yes
+    smooth_scroll: yes
+    number_sections: yes
+    theme: readable
+---
+<style type="text/css">
+
+div#TOC li {
+    list-style:none;
+    background-image:none;
+    background-repeat:none;
+    background-position:0;
+}
+h1.title {
+  font-size: 24px;
+  color: DarkRed;
+  text-align: center;
+}
+h4.author { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkRed;
+  text-align: center;
+}
+h4.date { /* Header 4 - and the author and data headers use this too  */
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+  text-align: center;
+}
+h1 { /* Header 3 - and the author and data headers use this too  */
+    font-size: 22px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: center;
+}
+h2 { /* Header 3 - and the author and data headers use this too  */
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
+
+h3 { /* Header 3 - and the author and data headers use this too  */
+    font-size: 15px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+    text-align: left;
+}
+
+h4 { /* Header 4 - and the author and data headers use this too  */
+    font-size: 18px;
+    font-family: "Times New Roman", Times, serif;
+    color: darkred;
+    text-align: left;
+}
+img {
+  border: 1px solid #555;
+}
+</style>
+
+```{r setup, include=FALSE}
+# code chunk specifies whether the R code, warnings, and output 
+# will be included in the output files.
+if (!require("Stat2Data")) {
+   install.packages("Stat2Data")
+   library(Stat2Data)
+}
+if (!require("knitr")) {
+   install.packages("knitr")
+   library(knitr)
+}
+if (!require("tidyverse")) {
+   install.packages("tidyverse")
+   library(tidyverse)
+}
+if (!require("knitr")) {
+   install.packages("knitr")
+   library(knitr)
+}
+if (!require("sf")) {
+   install.packages("sf")
+   library(sf)
+}
+if (!require("terra")) {
+   install.packages("terra")
+   library(terra)
+}
+if (!require("plotly")) {
+   install.packages("plotly")
+   library(plotly)
+}
+if (!require("dplyr")) {
+   install.packages("dplyr")
+   library(dplyr)
+}
+if (!require("png")) {
+    install.packages("png")             
+    library("png")
+}
+if (!require("spData")) {
+    install.packages("spData")             
+    library("spData")
+}
+if (!require("colourpicker")) {
+    install.packages("colourpicker")              
+    library("colourpicker")
+}
+if (!require("gifski")) {
+    install.packages("gifski")              
+    library("gifski")
+}
+if (!require("magick")) {
+    install.packages("magick")              
+    library("magick")
+}
+
+### ggplot and extensions
+if (!require("ggplot2")) {
+    install.packages("ggplot2")              
+    library("ggplot2")
+}
+if (!require("gganimate")) {
+    install.packages("gganimate")              
+    library("gganimate")
+}
+if (!require("tmap")) {
+    install.packages("tmap")              
+    library("tmap")
+}
+if (!require("sf")) {
+    install.packages("sf")              
+    library("sf")
+}
+if (!require("tigris")) {
+    install.packages("tigris")              
+    library("tigris")
+}
+if (!require("mapview")) {
+    install.packages("mapview")              
+    library("mapview")
+}
+if (!require("pander")) {
+    install.packages("pander")              
+    library("pander")
+}
+if (!require("lattice")) {
+    install.packages("lattice")
+library("lattice")
+}
+if (!require("sp")) {
+    install.packages("sp")
+library("sp")
+}
+if (!require("leaflet")) {
+    install.packages("leaflet")
+library("leaflet")
+}
+if (!require("leafpop")) {
+    install.packages("leafpop")
+library("leafpop")
+}
+if (!require("leafem")) {
+    install.packages("leafem")
+library("leafem")
+}
+if (!require("spDataLarge")) {
+    install.packages("spDataLarge", repos = "https://geocompr.r-universe.dev")
+library("spDataLarge")
+}
+if (!require("htmlwidgets")) {
+    install.packages("htmlwidgets")
+library("htmlwidgets")
+}
+if (!require("leaflet.extras")) {
+    install.packages("leaflet.extras")
+library("leaflet.extras")
+}
+if (!require("htmltools")) {
+    install.packages("htmltools")
+library("htmltools")
+}
+if(!require("png")){
+  install.packages("png")
+  library(png)
+}
+if(!require("viridis")){
+  install.packages("viridis")
+  library(viridis)
+}
+if(!require("ggmap")){
+  install.packages("ggmap")
+  library(ggmap)
+}
+if(!require("webshot")){
+  install.packages("webshot")
+  library(webshot)
+}
+if(!require("htmlwidgets")){
+  install.packages("htmlwidgets")
+  library(htmlwidgets)
+}
+if(!require("animation")){
+  install.packages("animation")
+  library(animation)
+}
+if(!require("gifski")){
+  install.packages("gifski")
+  library(gifski)
+}
+if(!require("htmlTable")){
+  install.packages("htmlTable")
+  library(htmlTable)
+}
+if(!require("magrittr")){
+  install.packages("magrittr")
+  library(magrittr)
+}
+### library(magrittr)
+###
+knitr::opts_chunk$set(echo = TRUE,       
+                      warning = FALSE,   
+                      results = TRUE,   
+                      message = FALSE,
+                      comment = NA)
+
+```
+
+# Introuction
+
+The purpose of this assignment is demonstrate a proficiency in tableau by creating a choropleth map in Tableau about the Presidential elections within the 21st century. We will be plotting the winning candidate for each state, and have a filter on year to allow for us to be able to look at multiple different elections using one graph. We will be making the colors red/blue which indicate whether the winner of the county/state was Republican or Democrat. Additionally we will use the tooltip to give further information about the states' election information. Such as the votes received. To further indicate Tableau proficiency, many of the variables will be completed in Tableau, however, we will still be doing some of the data prep in Tableau.
+
+# Data Preparation
+
+To clean our data for the project, we will be first bringing in the the 2000-2020 election data. We will then split it into republicans and democrats. Afterwards we will turn candidate votes and candidates into 2 seperate columns for each party, and then rejoin  this data by fips and year. Resulting in a final dataset of year,state, state_po, county_name, fips, dem_votes, democrat candidate, rep_vootes, republican candidate. FIPS will then be given leading 0s in excel. To test Tableau knowledge we will then create the fields winning party, winning candidate, votes received, and percentage of total votes in tableau.
+
+```{r data prep}
+election<-read_csv(file='https://dannyoc99.github.io/DOCAL/dataset/PresidentialElection2000To2020.csv')
+democrats<-filter(election,party=='DEMOCRAT')%>%rename(dem_votes=candidatevotes,fips=county_fips)%>%subset(select=c(year,state,state_po,county_name,fips,dem_votes,candidate))
+republicans<-filter(election,party=='REPUBLICAN')%>%rename(rep_votes=candidatevotes,fips=county_fips)%>%subset(select=c(year,fips,rep_votes,candidate))
+new_election<-merge(democrats,republicans,by=c("year","fips"))
+write_csv(new_election,file='county_election.csv')
+```
+
+
+# County Level Data 
+
+The following is the embedded interactive Tableau from the Tableau Public server.
+
+<table border = 0 bordercolor="darkgreen" bgcolor='#f6f6f6'  width=100%  align = center>
+<tr>
+<td>
+<div class='tableauPlaceholder' id='viz1711824259491' style='position: relative'>
+<noscript><a href='#'><img alt='County Level Republican vs Democrat Map 2020 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ch&#47;ChoroplethMap_17118242340630&#47;CountyLevel&#47;1_rss.png' style='border: none' /></a>
+</noscript><object class='tableauViz'  style='display:none;'>
+
+<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+<param name='embed_code_version' value='3' /> 
+<param name='site_root' value='' /><param name='name' value='ChoroplethMap_17118242340630&#47;CountyLevel' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ch&#47;ChoroplethMap_17118242340630&#47;CountyLevel&#47;1.png' />
+<param name='animate_transition' value='yes' />
+<param name='display_static_image' value='yes' />
+<param name='display_spinner' value='yes' />
+<param name='display_overlay' value='yes' />
+<param name='display_count' value='yes' />
+<param name='language' value='en-US' />
+<param name='filter' value='publish=yes' />
+</object></div>
+
+<script type='text/javascript'>
+var divElement = document.getElementById('viz1711824259491');
+var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px'; 
+
+var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+</td>
+</tr>
+</table>
+
+The county level data shows how much population size can effect the votes of a candidate. Despite a lot of red state winners in 2020, the blue candidate was the final winner. Additionally we can see that the red states were predominantly in the middle of the country and in the south while most northern and costal counties voted blue. This story can be further seen within the state Map, seen below, where most midwest states and southern states were red while most northern and costal states are blue. While this analysis primarily focused on the year 2020, we can see that this statement holds true for most years by using the year filter.
+
+<table border = 0 bordercolor="darkgreen" bgcolor='#f6f6f6'  width=100%  align = center>
+<tr>
+<td>
+<div class='tableauPlaceholder' id='viz1711825880954' style='position: relative'>
+<noscript><a href='#'><img alt=' State Level  Republican vs Democrat Map 2020 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ch&#47;ChoroplethMapState&#47;StateLevel&#47;1_rss.png' style='border: none' /></a>
+</noscript>
+
+<object class='tableauViz'  style='display:none;'>
+<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+<param name='embed_code_version' value='3' /> 
+<param name='site_root' value='' />
+<param name='name' value='ChoroplethMapState&#47;StateLevel' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ch&#47;ChoroplethMapState&#47;StateLevel&#47;1.png' /> <param name='animate_transition' value='yes' />
+<param name='display_static_image' value='yes' />
+<param name='display_spinner' value='yes' />
+<param name='display_overlay' value='yes' />
+<param name='display_count' value='yes' />
+<param name='language' value='en-US' />
+<param name='filter' value='publish=yes' />
+</object>
+</div>                
+
+<script type='text/javascript'>                    
+var divElement = document.getElementById('viz1711825880954');                    
+var vizElement = divElement.getElementsByTagName('object')[0];                   
+vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+</td>
+</tr>
+</table>
+
