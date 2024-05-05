@@ -1,10 +1,10 @@
 School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,Latitude,Longitude,Phone Number,Start Time,End Time,Student Enrollment,Percent White,Percent Black,Percent Hispanic,Percent Asian,Average Score (SAT Math),Average Score (SAT Reading),Average Score (SAT Writing),Percent Tested,Ethnicity Majority
 02M260,Clinton School Writers and Artists,Manhattan,M933,425 West 33rd Street,Manhattan,NY,10001,40.75321,-73.99786,212-695-9114,,,,,,,,,,,,Unknown
 06M211,Inwood Early College for Health and Information Technologies,Manhattan,M052,650 Academy Street,Manhattan,NY,10002,40.86605,-73.92486,718-935-3660  ,8:30 AM,3:00 PM,87,3.40%,21.80%,67.80%,4.60%,,,,,Hispanic
-01M539,"New Explorations into Science, Technology and Math High School",Manhattan,M022,111 Columbia Street,Manhattan,NY,10002,40.71873,-73.97943,212-677-5190,8:15 AM,4:00 PM,1735,28.60%,13.30%,18.00%,38.50%,657,601,601,91.00%,White
+01M539,"New Explorations into Science, Technology and Math High School",Manhattan,M022,111 Columbia Street,Manhattan,NY,10002,40.71873,-73.97943,212-677-5190,8:15 AM,4:00 PM,1735,28.60%,13.30%,18.00%,38.50%,657,601,601,91.00%,Asian
 02M294,Essex Street Academy,Manhattan,M445,350 Grand Street,Manhattan,NY,10002,40.71687,-73.98953,212-475-4773,8:00 AM,2:45 PM,358,11.70%,38.50%,41.30%,5.90%,395,411,387,78.90%,Hispanic
 02M308,Lower Manhattan Arts Academy,Manhattan,M445,350 Grand Street,Manhattan,NY,10002,40.71687,-73.98953,212-505-0143,8:30 AM,3:00 PM,383,3.10%,28.20%,56.90%,8.60%,418,428,415,65.10%,Hispanic
-02M545,High School for Dual Language and Asian Studies,Manhattan,M445,350 Grand Street,Manhattan,NY,10002,40.71687,-73.98953,212-475-4097,8:00 AM,3:35 PM,416,1.70%,3.10%,5.50%,88.90%,613,453,463,95.90%,Hispanic
+02M545,High School for Dual Language and Asian Studies,Manhattan,M445,350 Grand Street,Manhattan,NY,10002,40.71687,-73.98953,212-475-4097,8:00 AM,3:35 PM,416,1.70%,3.10%,5.50%,88.90%,613,453,463,95.90%,Asian
 01M292,Henry Street School for International Studies,Manhattan,M056,220 Henry Street,Manhattan,NY,10002,40.71376,-73.98526,212-406-9411,8:30 AM,3:30 PM,255,3.90%,24.40%,56.60%,13.20%,410,406,381,59.70%,Hispanic
 01M696,Bard High School Early College,Manhattan,M097,525 East Houston Street,Manhattan,NY,10002,40.71896,-73.97607,212-995-8479,9:00 AM,3:50 PM,545,45.30%,17.20%,18.70%,17.10%,634,641,639,70.80%,White
 02M305,Urban Assembly Academy of Government and Law,Manhattan,M445,350 Grand Street,Manhattan,NY,10002,40.71687,-73.98953,212-505-0745,8:32 AM,3:45 PM,329,2.70%,41.90%,49.20%,5.80%,389,395,381,80.80%,Hispanic
@@ -21,12 +21,12 @@ School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,L
 02M374,Gramercy Arts High School,Manhattan,M460,40 Irving Place,Manhattan,NY,10003,40.73552,-73.9876,212-253-7076,8:15 AM,3:30 PM,530,5.80%,42.50%,44.20%,3.60%,446,459,455,79.60%,Hispanic
 02M551,Urban Assembly New York Harbor School,Manhattan,M877,550 Wheeler Avenue,Manhattan,NY,10004,40.69079,-74.01976,212-458-0800,8:15 AM,4:00 PM,447,18.80%,23.70%,51.70%,2.90%,446,453,428,78.80%,Hispanic
 02M580,Richard R. Green High School of Teaching,Manhattan,M282,26 Broadway,Manhattan,NY,10004,40.70523,-74.01332,646-826-8174,8:30 AM,3:20 PM,566,2.70%,31.10%,58.80%,6.20%,411,415,409,60.00%,Hispanic
-02M418,Millennium High School,Manhattan,M824,75 Broad Street,Manhattan,NY,10004,40.70492,-74.01151,212-825-9008,8:30 AM,3:00 PM,659,32.80%,7.60%,18.20%,38.40%,577,560,567,94.00%,White
+02M418,Millennium High School,Manhattan,M824,75 Broad Street,Manhattan,NY,10004,40.70492,-74.01151,212-825-9008,8:30 AM,3:00 PM,659,32.80%,7.60%,18.20%,38.40%,577,560,567,94.00%,Asian
 02M316,Urban Assembly School of Business for Young Women,Manhattan,M282,26 Broadway,Manhattan,NY,10004,40.70523,-74.01332,212-668-0169,8:35 AM,3:30 PM,405,2.20%,52.80%,39.30%,3.50%,418,420,417,75.00%,Black
 02M489,High School of Economics and Finance,Manhattan,M833,100 Trinity Place,Manhattan,NY,10006,40.70922,-74.01203,212-346-0708,8:30 AM,3:30 PM,796,7.20%,22.90%,47.10%,21.70%,469,442,447,66.80%,Hispanic
 02M425,Leadership and Public Service High School,Manhattan,M894,90 Trinity Place,Manhattan,NY,10006,40.70915,-74.01208,212-346-0007,8:30 AM,2:45 PM,699,4.40%,27.90%,61.90%,3.90%,390,396,392,54.90%,Hispanic
 01M450,East Side Community School,Manhattan,M060,420 East 12th Street,Manhattan,NY,10009,40.72978,-73.98304,212-460-8467,8:30 AM,3:30 PM,666,8.30%,22.10%,57.90%,9.40%,454,428,445,85.20%,Hispanic
-02M411,Baruch College Campus High School,Manhattan,M874,55 East 25th Street,Manhattan,NY,10010,40.74405,-73.99148,212-683-7440,8:20 AM,2:50 PM,451,22.80%,6.20%,14.90%,54.80%,592,526,531,94.30%,White
+02M411,Baruch College Campus High School,Manhattan,M874,55 East 25th Street,Manhattan,NY,10010,40.74405,-73.99148,212-683-7440,8:20 AM,2:50 PM,451,22.80%,6.20%,14.90%,54.80%,592,526,531,94.30%,Asian
 02M047,47 American Sign Language and English Secondary School,Manhattan,M047,223 East 23rd Street,Manhattan,NY,10010,40.7386,-73.98251,917-326-6668,8:45 AM,3:45 PM,169,5.30%,28.40%,64.50%,1.20%,,,,48.30%,Hispanic
 02M413,School of the Future High School,Manhattan,M660,127 East 22nd Street,Manhattan,NY,10010,40.73895,-73.98541,212-475-8086,8:35 AM,3:10 PM,713,35.90%,11.70%,30.40%,14.40%,534,533,522,89.90%,White
 02M439,Manhattan Village Academy,Manhattan,M873,43 West 22nd Street,Manhattan,NY,10010,40.74149,-73.99145,212-242-8752,8:00 AM,3:20 PM,415,7.20%,9.60%,67.20%,7.20%,522,479,510,98.80%,Hispanic
@@ -79,7 +79,7 @@ School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,L
 04M372,Esperanza Preparatory Academy,Manhattan,M117,240 East 109th Street,Manhattan,NY,10029,40.79307,-73.94236,212-722-6507,8:00 AM,3:00 PM,507,2.10%,13.10%,83.10%,1.30%,,,,,Hispanic
 05M304,Mott Hall High School,Manhattan,M136,6 Edgecombe Avenue,Manhattan,NY,10030,40.81736,-73.94771,212-694-6020,8:00 AM,3:30 PM,428,0.70%,38.30%,59.10%,0.90%,416,445,440,36.90%,Hispanic
 05M670,Thurgood Marshall Academy for Learning and Social Change,Manhattan,M970,200-214 West 135th Street,Manhattan,NY,10030,40.81536,-73.9439,212-283-8055,8:30 AM,3:00 PM,561,0.80%,77.60%,19.60%,1.30%,402,394,400,84.70%,Black
-05M692,"High School for Mathematics, Science, and Engineering at City College",Manhattan,M812,240 Convent Avenue,Manhattan,NY,10031,40.82112,-73.94885,212-281-6490,8:00 AM,3:35 PM,470,26.80%,9.60%,21.70%,38.50%,683,610,596,92.60%,White
+05M692,"High School for Mathematics, Science, and Engineering at City College",Manhattan,M812,240 Convent Avenue,Manhattan,NY,10031,40.82112,-73.94885,212-281-6490,8:00 AM,3:35 PM,470,26.80%,9.60%,21.70%,38.50%,683,610,596,92.60%,Asian
 06M540,A. Philip Randolph Campus High School,Manhattan,M540,443 West 135th Street,Manhattan,NY,10031,40.81832,-73.95061,212-926-0113,8:00 AM,2:20 PM,1354,1.70%,32.00%,59.70%,4.90%,459,453,447,74.00%,Hispanic
 06M552,Gregorio Luperon High School for Science and Mathematics,Manhattan,M876,501 West 165th Street,Manhattan,NY,10032,40.83803,-73.93837,212-928-1202,8:00 AM,3:30 PM,504,0.00%,0.00%,100.00%,0.00%,383,355,352,71.00%,Hispanic
 06M346,Community Health Academy of the Heights,Manhattan,M814,504 West 158th Street,Manhattan,NY,10032,40.83356,-73.9418,212-342-6600,8:15 AM,3:00 PM,629,2.70%,4.90%,91.80%,0.00%,387,389,385,55.30%,Hispanic
@@ -104,7 +104,7 @@ School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,L
 02M519,Talent Unlimited High School,Manhattan,M480,317 East 67th Street,Manhattan,NY,10065,40.76545,-73.96021,212-737-1530,8:10 AM,3:20 PM,506,20.40%,33.40%,39.90%,4.90%,485,498,496,89.30%,Hispanic
 02M449,Vanguard High School,Manhattan,M480,317 East 67th Street,Manhattan,NY,10065,40.76545,-73.96021,212-517-5175,8:00 AM,3:00 PM,486,4.70%,27.40%,57.00%,7.60%,431,409,396,63.80%,Hispanic
 02M655,Life Sciences Secondary School,Manhattan,M645,320 East 96th Street,Manhattan,NY,10128,40.78364,-73.94574,212-348-1694,8:00 AM,3:00 PM,697,3.20%,28.30%,62.20%,4.30%,435,440,425,63.00%,Hispanic
-02M475,Stuyvesant High School,Manhattan,M477,345 Chambers Street,Manhattan,NY,10282,40.71775,-74.01405,212-312-4800,8:00 AM,3:30 PM,3296,20.40%,0.80%,2.60%,73.40%,754,697,693,97.40%,White
+02M475,Stuyvesant High School,Manhattan,M477,345 Chambers Street,Manhattan,NY,10282,40.71775,-74.01405,212-312-4800,8:00 AM,3:30 PM,3296,20.40%,0.80%,2.60%,73.40%,754,697,693,97.40%,Asian
 31R600,Ralph R. McKee Career and Technical Education High School,Staten Island,R600,290 St Marks Place,Staten Island,NY,10301,40.64274,-74.07871,718-420-2600,8:00 AM,3:00 PM,624,19.70%,30.80%,42.50%,4.80%,420,429,409,38.00%,Hispanic
 31R080,Michael J. Petrides School,Staten Island,R880,715 Ocean Terrace,Staten Island,NY,10301,40.60745,-74.10148,718-815-0186,8:00 AM,2:20 PM,1327,49.80%,22.30%,20.20%,6.90%,483,473,470,79.20%,White
 31R450,Curtis High School,Staten Island,R450,105 Hamilton Avenue,Staten Island,NY,10301,40.64474,-74.08134,718-390-1800,9:00 AM,3:30 PM,2499,17.70%,38.40%,36.00%,7.10%,453,458,444,64.20%,Black
@@ -202,7 +202,7 @@ School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,L
 11X265,Bronx Lab School,Bronx,X425,800 East Gun Hill Road,Bronx,NY,10467,40.87575,-73.86139,718-696-3700,8:45 AM,5:00 PM,471,1.50%,39.90%,54.40%,3.60%,407,416,401,77.40%,Hispanic
 11X253,Bronx High School for Writing and Communication Arts,Bronx,X425,800 East Gun Hill Road,Bronx,NY,10467,40.87575,-73.86139,718-944-5660,8:00 AM,3:00 PM,389,1.30%,45.00%,49.10%,3.30%,380,437,425,38.10%,Hispanic
 10X433,High School for Teaching and the Professions,Bronx,X430,2780 Reservoir Avenue,Bronx,NY,10468,40.87038,-73.89816,718-329-7380,8:45 AM,3:45 PM,486,2.70%,20.40%,74.50%,1.90%,372,361,369,46.50%,Hispanic
-10X445,Bronx High School of Science,Bronx,X445,75 West 205th Street,Bronx,NY,10468,40.87706,-73.88978,718-817-7700,8:00 AM,3:45 PM,3015,22.10%,2.60%,5.50%,62.80%,714,660,667,97.00%,White
+10X445,Bronx High School of Science,Bronx,X445,75 West 205th Street,Bronx,NY,10468,40.87706,-73.88978,718-817-7700,8:00 AM,3:45 PM,3015,22.10%,2.60%,5.50%,62.80%,714,660,667,97.00%,Asian
 10X268,Kingsbridge International High School,Bronx,X430,2780 Reservoir Avenue,Bronx,NY,10468,40.87038,-73.89816,718-329-8580,7:45 AM,2:45 PM,461,2.00%,5.20%,85.90%,6.50%,366,311,310,50.70%,Hispanic
 10X549,Discovery High School,Bronx,X430,2780 Reservoir Avenue,Bronx,NY,10468,40.87038,-73.89816,718-733-3872,8:45 AM,3:45 PM,530,2.30%,17.40%,77.20%,2.50%,432,396,395,39.90%,Hispanic
 10X353,World View High School,Bronx,X440,100 West Mosholu Parkway South,Bronx,NY,10468,40.88008,-73.8859,718-601-0391,9:00 AM,4:00 PM,173,1.20%,27.70%,68.80%,1.20%,,,,,Hispanic
@@ -250,9 +250,9 @@ School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,L
 30Q450,Long Island City High School,Queens,Q452,14-30 Broadway,Astoria,NY,11106,40.76576,-73.93273,718-545-7095,8:29 AM,3:50 PM,2123,9.00%,13.50%,60.20%,15.70%,430,423,412,51.60%,Hispanic
 30Q501,Frank Sinatra School of the Arts High School,Queens,Q570,35-12 35th Avenue,Astoria,NY,11106,40.75653,-73.92514,718-361-9920,7:45 AM,3:15 PM,808,38.70%,13.60%,33.40%,10.50%,536,543,543,89.50%,White
 30Q258,Energy Tech High School,Queens,Q204,36-41 28th Street,Astoria,NY,11106,40.7571,-73.93262,718-472-0536,8:45 AM,3:35 PM,227,15.90%,11.50%,42.70%,23.30%,,,,,Hispanic
-30Q580,Baccalaureate School for Global Education,Queens,Q798,34-12 36th Avenue,Astoria,NY,11106,40.75517,-73.92682,718-361-5275,8:00 AM,3:00 PM,478,34.50%,2.50%,21.20%,39.60%,633,620,628,98.50%,White
+30Q580,Baccalaureate School for Global Education,Queens,Q798,34-12 36th Avenue,Astoria,NY,11106,40.75517,-73.92682,718-361-5275,8:00 AM,3:00 PM,478,34.50%,2.50%,21.20%,39.60%,633,620,628,98.50%,Asian
 13K419,"Science Skills Center High School for Science, Technology, and the Creative Arts",Brooklyn,K805,49 Flatbush Avenue Extension,Brooklyn,NY,11201,40.69717,-73.98496,718-243-9413,8:07 AM,3:40 PM,528,2.10%,70.50%,18.40%,6.80%,399,397,386,65.90%,Black
-13K439,Brooklyn International High School,Brooklyn,K805,49 Flatbush Avenue Extension,Brooklyn,NY,11201,40.69717,-73.98496,718-643-9315,9:15 AM,3:30 PM,345,13.90%,17.70%,26.70%,41.70%,432,334,333,92.70%,Hispanic
+13K439,Brooklyn International High School,Brooklyn,K805,49 Flatbush Avenue Extension,Brooklyn,NY,11201,40.69717,-73.98496,718-643-9315,9:15 AM,3:30 PM,345,13.90%,17.70%,26.70%,41.70%,432,334,333,92.70%,Asian
 15K423,Brooklyn Frontiers High School,Brooklyn,K520,112 Schermerhorn Street,Brooklyn,NY,11201,40.6902,-73.98927,718-722-4727,8:20 AM,3:09 PM,,,,,,,,,,Unknown
 15K497,School for International Studies,Brooklyn,K293,284 Baltic Street,Brooklyn,NY,11201,40.68545,-73.99349,718-330-9390,8:30 AM,3:15 PM,466,9.90%,47.90%,36.30%,4.20%,417,406,394,65.10%,Black
 15K429,Brooklyn School for Global Studies,Brooklyn,K293,284 Baltic Street,Brooklyn,NY,11201,40.68545,-73.99349,718-694-9741,8:45 AM,3:10 PM,250,6.60%,54.80%,35.50%,2.40%,393,381,402,61.80%,Black
@@ -270,13 +270,13 @@ School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,L
 17K546,High School for Public Service: Heroes of Tomorrow,Brooklyn,K470,600 Kingston Avenue,Brooklyn,NY,11203,40.65952,-73.94255,718-756-5325,8:30 AM,3:15 PM,454,1.10%,75.80%,17.40%,5.30%,468,454,464,95.40%,Black
 18K589,Arts and Media Preparatory Academy,Brooklyn,K232,905 Winthrop Street,Brooklyn,NY,11203,40.65846,-73.92903,718-773-3908,8:50 AM,3:40 PM,279,1.40%,82.80%,12.50%,1.10%,370,383,374,64.20%,Black
 17K533,School for Democracy and Leadership,Brooklyn,K470,600 Kingston Avenue,Brooklyn,NY,11203,40.65952,-73.94255,718-771-4865,8:00 AM,2:50 PM,319,2.30%,87.60%,7.40%,0.80%,386,385,390,53.50%,Black
-20K609,Urban Assembly School for Criminal Justice,Brooklyn,K223,4200 16th Avenue,Brooklyn,NY,11204,40.63491,-73.98152,718-438-3893,8:45 AM,3:45 PM,496,15.00%,17.50%,20.40%,46.50%,428,413,417,83.60%,Hispanic
-20K505,Franklin Delano Roosevelt High School,Brooklyn,K505,5800 20th Avenue,Brooklyn,NY,11204,40.62026,-73.98201,718-621-8800,9:30 AM,4:15 PM,3220,18.60%,11.50%,29.30%,40.10%,504,411,407,54.00%,Hispanic
+20K609,Urban Assembly School for Criminal Justice,Brooklyn,K223,4200 16th Avenue,Brooklyn,NY,11204,40.63491,-73.98152,718-438-3893,8:45 AM,3:45 PM,496,15.00%,17.50%,20.40%,46.50%,428,413,417,83.60%,Asian
+20K505,Franklin Delano Roosevelt High School,Brooklyn,K505,5800 20th Avenue,Brooklyn,NY,11204,40.62026,-73.98201,718-621-8800,9:30 AM,4:15 PM,3220,18.60%,11.50%,29.30%,40.10%,504,411,407,54.00%,Asian
 13K412,"Brooklyn Community High School of Communication, Arts, and Media",Brooklyn,K117,300 Willoughby Avenue,Brooklyn,NY,11205,40.69258,-73.95887,718-230-5748,8:30 AM,3:20 PM,404,0.70%,78.50%,17.80%,1.20%,358,386,380,51.70%,Black
 13K265,Dr. Susan S. McKinney Secondary School of the Arts,Brooklyn,K265,101 Park Avenue,Brooklyn,NY,11205,40.69634,-73.97577,718-834-6760,8:00 AM,3:15 PM,421,0.70%,73.00%,22.80%,0.70%,332,346,350,55.10%,Black
 13K670,Benjamin Banneker Academy,Brooklyn,K914,71-77 Clinton Avenue,Brooklyn,NY,11205,40.69566,-73.96929,718-797-3702,8:00 AM,3:00 PM,916,0.50%,86.40%,8.60%,3.40%,479,484,472,85.50%,Black
 14K071,Juan Morel Campos Secondary School,Brooklyn,K071,215 Heyward Street,Brooklyn,NY,11206,40.70358,-73.95324,718-302-7900,8:00 AM,2:15 PM,692,2.50%,13.60%,82.70%,0.30%,366,356,353,56.30%,Hispanic
-14K449,Brooklyn Latin School,Brooklyn,K049,223 Graham Avenue,Brooklyn,NY,11206,40.7099,-73.94366,718-366-0154,8:00 AM,2:30 PM,676,13.50%,19.40%,14.50%,36.10%,625,588,591,97.50%,Black
+14K449,Brooklyn Latin School,Brooklyn,K049,223 Graham Avenue,Brooklyn,NY,11206,40.7099,-73.94366,718-366-0154,8:00 AM,2:30 PM,676,13.50%,19.40%,14.50%,36.10%,625,588,591,97.50%,Asian
 14K322,Foundations Academy,Brooklyn,K033,70 Tompkins Avenue,Brooklyn,NY,11206,40.69706,-73.94668,718-302-5092,8:30 AM,3:30 PM,113,0.00%,67.30%,29.20%,1.80%,,,,18.90%,Black
 14K614,Young Women's Leadership School of Brooklyn,Brooklyn,K147,325 Bushwick Avenue,Brooklyn,NY,11206,40.7056,-73.93948,718-387-5641,7:30 AM,2:45 PM,380,0.80%,63.80%,28.30%,3.30%,,,,0.00%,Black
 14K454,Green School: An Academy for Environmental Careers,Brooklyn,K049,223 Graham Avenue,Brooklyn,NY,11206,40.7099,-73.94366,718-599-1207,8:00 AM,3:30 PM,276,1.40%,38.00%,59.10%,0.70%,384,398,399,41.10%,Hispanic
@@ -297,7 +297,7 @@ School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,L
 19K404,Academy for Young Writers,Brooklyn,K422,1065 Elton Street,Brooklyn,NY,11208,40.65752,-73.87478,718-688-7230,9:05 AM,3:30 PM,547,1.20%,73.10%,21.90%,1.50%,382,413,391,81.20%,Black
 19K618,Academy of Innovative Technology,Brooklyn,K420,999 Jamaica Avenue,Brooklyn,NY,11208,40.69114,-73.86843,718-827-2469,7:45 AM,2:30 PM,413,1.20%,45.50%,45.50%,5.30%,395,376,359,57.40%,Unknown
 20K490,Fort Hamilton High School,Brooklyn,K490,8301 Shore Road,Brooklyn,NY,11209,40.62791,-74.03995,718-748-1537,9:00 AM,3:45 PM,4372,34.10%,4.50%,29.20%,30.10%,513,456,451,68.70%,White
-22K405,Midwood High School,Brooklyn,K405,2839 Bedford Avenue,Brooklyn,NY,11210,40.63334,-73.95292,718-724-8500,8:45 AM,3:30 PM,3787,23.30%,29.80%,12.50%,33.70%,550,514,516,85.70%,Black
+22K405,Midwood High School,Brooklyn,K405,2839 Bedford Avenue,Brooklyn,NY,11210,40.63334,-73.95292,718-724-8500,8:45 AM,3:30 PM,3787,23.30%,29.80%,12.50%,33.70%,550,514,516,85.70%,Asian
 14K474,PROGRESS High School for Professional Careers,Brooklyn,K450,850 Grand Street,Brooklyn,NY,11211,40.71196,-73.94043,718-387-0228,8:00 AM,2:45 PM,1098,0.80%,35.10%,62.60%,1.00%,380,377,384,44.90%,Hispanic
 14K478,"High School for Enterprise, Business, and Technology",Brooklyn,K450,850 Grand Street,Brooklyn,NY,11211,40.71196,-73.94043,718-387-2800,7:45 AM,3:45 PM,1001,2.50%,36.10%,56.90%,4.00%,463,446,425,54.50%,Hispanic
 14K488,Brooklyn Preparatory High School,Brooklyn,K650,257 North 6th Street,Brooklyn,NY,11211,40.71504,-73.95465,718-486-2550,8:20 AM,3:10 PM,494,2.00%,54.70%,40.30%,2.40%,391,406,391,74.50%,Black
@@ -313,9 +313,9 @@ School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,L
 16K765,Nelson Mandela School for Social Justice,Brooklyn,K455,1700 Fulton Street,Brooklyn,NY,11213,40.67943,-73.93243,718-935-3604,8:30 AM,4:00 PM,124,2.40%,86.30%,10.50%,0.00%,,,,,Black
 21K348,High School of Sports Management,Brooklyn,K400,2630 Benson Avenue,Brooklyn,NY,11214,40.59359,-73.98473,718-333-7650,7:45 AM,3:45 PM,290,5.50%,72.40%,16.90%,3.80%,367,374,361,56.20%,Black
 21K690,Brooklyn Studio Secondary School,Brooklyn,K721,8310 21st Avenue,Brooklyn,NY,11214,40.60488,-73.99442,718-266-5032,8:00 AM,2:30 PM,901,53.30%,5.10%,25.00%,16.20%,458,434,434,67.80%,White
-21K337,International High School at Lafayette,Brooklyn,K400,2630 Benson Avenue,Brooklyn,NY,11214,40.59359,-73.98473,718-333-7860,9:15 AM,4:00 PM,358,25.70%,8.70%,24.00%,41.10%,424,343,337,84.30%,White
+21K337,International High School at Lafayette,Brooklyn,K400,2630 Benson Avenue,Brooklyn,NY,11214,40.59359,-73.98473,718-333-7860,9:15 AM,4:00 PM,358,25.70%,8.70%,24.00%,41.10%,424,343,337,84.30%,Asian
 21K572,Expeditionary Learning School for Community Leaders,Brooklyn,K400,2630 Benson Avenue,Brooklyn,NY,11214,40.59359,-73.98473,718-333-7700,8:25 AM,3:15 PM,271,23.20%,17.30%,42.10%,15.50%,420,396,396,75.00%,Hispanic
-20K445,New Utrecht High School,Brooklyn,K445,1601 80th Street,Brooklyn,NY,11214,40.61342,-74.00365,718-232-2500,8:00 AM,3:00 PM,3480,27.60%,4.00%,29.00%,38.60%,488,422,417,63.20%,Hispanic
+20K445,New Utrecht High School,Brooklyn,K445,1601 80th Street,Brooklyn,NY,11214,40.61342,-74.00365,718-232-2500,8:00 AM,3:00 PM,3480,27.60%,4.00%,29.00%,38.60%,488,422,417,63.20%,Asian
 21K559,Life Academy High School for Film and Music,Brooklyn,K400,2630 Benson Avenue,Brooklyn,NY,11214,40.59359,-73.98473,718-333-7750,8:15 AM,3:00 PM,271,13.70%,51.70%,26.60%,7.40%,369,379,378,70.20%,Black
 21K468,Kingsborough Early College School,Brooklyn,K400,2630 Benson Avenue,Brooklyn,NY,11214,40.59359,-73.98473,718-333-7850,8:00 AM,2:20 PM,564,42.50%,25.70%,24.30%,6.60%,474,462,449,65.80%,White
 15K463,Secondary School for Journalism,Brooklyn,K460,237 7th Avenue,Brooklyn,NY,11215,40.6696,-73.97926,718-832-4201,8:25 AM,3:12 PM,285,6.30%,46.70%,37.50%,7.40%,408,435,415,58.80%,Black
@@ -325,7 +325,7 @@ School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,L
 13K595,Bedford Academy High School,Brooklyn,K994,1119 Bedford Avenue,Brooklyn,NY,11216,40.68538,-73.95427,718-398-3061,8:00 AM,4:15 PM,364,0.80%,84.60%,7.70%,3.00%,505,464,456,96.20%,Black
 15K592,Khalil Gibran International Academy,Brooklyn,K806,362 Schermerhorn Street,Brooklyn,NY,11217,40.68674,-73.98023,718-237-2502,8:00 AM,3:00 PM,174,27.60%,48.30%,6.30%,15.50%,,,,,Black
 15K656,Brooklyn High School of the Arts,Brooklyn,K655,345 Dean Street,Brooklyn,NY,11217,40.68365,-73.98047,718-855-2412,8:15 AM,3:00 PM,870,2.00%,70.30%,22.50%,1.70%,439,441,436,80.60%,Black
-13K430,Brooklyn Technical High School,Brooklyn,K430,29 Ft Greene Place,Brooklyn,NY,11217,40.68811,-73.97675,718-804-6400,8:45 AM,3:15 PM,5447,20.50%,7.70%,7.60%,60.50%,682,608,606,95.50%,White
+13K430,Brooklyn Technical High School,Brooklyn,K430,29 Ft Greene Place,Brooklyn,NY,11217,40.68811,-73.97675,718-804-6400,8:45 AM,3:15 PM,5447,20.50%,7.70%,7.60%,60.50%,682,608,606,95.50%,Asian
 22K555,Brooklyn College Academy,Brooklyn,K917,350 Coney Island Avenue,Brooklyn,NY,11218,40.6492,-73.97169,718-853-6184,8:00 AM,3:00 PM,605,4.60%,72.20%,9.10%,7.90%,502,495,493,98.10%,Black
 20K485,High School of Telecommunication Arts and Technology,Brooklyn,K485,350 67th Street,Brooklyn,NY,11220,40.63725,-74.02382,718-759-3400,8:00 AM,3:00 PM,1329,16.30%,7.70%,56.70%,18.00%,475,440,445,81.60%,Hispanic
 32K545,EBC High School for Public Service in Bushwick,Brooklyn,K913,1155 Dekalb Avenue,Brooklyn,NY,11221,40.69448,-73.92915,718-452-3440,8:00 AM,3:45 PM,514,0.20%,8.00%,90.70%,0.40%,389,374,378,50.00%,Hispanic
@@ -335,7 +335,7 @@ School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,L
 32K556,Bushwick Leaders High School for Academic Excellence,Brooklyn,K865,797 Bushwick Avenue,Brooklyn,NY,11221,40.695,-73.92799,718-919-4212,8:15 AM,4:45 PM,317,0.30%,16.70%,81.40%,0.90%,393,368,382,46.80%,Hispanic
 14K610,Automotive High School,Brooklyn,K610,50 Bedford Avenue,Brooklyn,NY,11222,40.72264,-73.95258,718-218-9301,8:45 AM,3:50 PM,383,2.90%,55.90%,38.10%,1.60%,367,381,328,31.60%,Black
 14K632,Frances Perkins Academy,Brooklyn,K610,50 Bedford Avenue,Brooklyn,NY,11222,40.72264,-73.95258,718-388-7721,8:00 AM,3:00 PM,142,2.10%,62.70%,32.40%,0.70%,399,413,400,46.30%,Black
-21K540,John Dewey High School,Brooklyn,K540,50 Avenue X,Brooklyn,NY,11223,40.58924,-73.98175,718-373-6400,8:13 AM,3:05 PM,2006,13.70%,28.60%,20.70%,35.80%,512,418,396,62.70%,Black
+21K540,John Dewey High School,Brooklyn,K540,50 Avenue X,Brooklyn,NY,11223,40.58924,-73.98175,718-373-6400,8:13 AM,3:05 PM,2006,13.70%,28.60%,20.70%,35.80%,512,418,396,62.70%,Asian
 21K344,Rachel Carson High School for Coastal Studies,Brooklyn,K303,521 West Avenue,Brooklyn,NY,11224,40.58212,-73.97289,718-265-0329,8:00 AM,3:15 PM,560,43.60%,22.50%,22.30%,10.20%,436,430,421,68.40%,White
 17K548,Brooklyn School for Music and Theatre,Brooklyn,K440,883 Classon Avenue,Brooklyn,NY,11225,40.6703,-73.96165,718-230-6250,8:10 AM,3:00 PM,386,0.80%,82.60%,15.80%,0.80%,382,393,377,72.20%,Black
 17K547,Brooklyn Academy of Science and the Environment,Brooklyn,K440,883 Classon Avenue,Brooklyn,NY,11225,40.6703,-73.96165,718-230-6363,8:30 AM,4:15 PM,453,1.30%,80.10%,12.60%,5.30%,419,411,416,58.50%,Black
@@ -373,18 +373,18 @@ School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,L
 32K552,Academy of Urban Planning,Brooklyn,K480,400 Irving Avenue,Brooklyn,NY,11237,40.69696,-73.91082,718-381-7100,8:15 AM,3:45 PM,279,0.70%,23.30%,73.80%,0.70%,392,374,379,41.90%,Hispanic
 13K499,ACORN Community High School,Brooklyn,K909,561 Grand Avenue,Brooklyn,NY,11238,40.67851,-73.96207,718-789-2258,8:15 AM,3:15 PM,504,1.60%,83.50%,12.90%,1.00%,379,395,385,61.30%,Black
 25Q460,Flushing High School,Queens,Q460,35-01 Union Street,Flushing,NY,11354,40.76524,-73.82786,718-888-7500,8:51 AM,3:37 PM,2186,3.70%,23.70%,51.10%,20.30%,444,407,405,46.10%,Hispanic
-25Q241,Queens High School for Language Studies,Queens,Q460,35-01 Union Street,Flushing,NY,11354,40.76524,-73.82786,718-888-7530,8:00 AM,3:37 PM,205,2.40%,10.20%,23.90%,61.00%,,,,,Hispanic
+25Q241,Queens High School for Language Studies,Queens,Q460,35-01 Union Street,Flushing,NY,11354,40.76524,-73.82786,718-888-7530,8:00 AM,3:37 PM,205,2.40%,10.20%,23.90%,61.00%,,,,,Asian
 25Q240,Veritas Academy,Queens,Q460,35-01 Union Street,Flushing,NY,11354,40.76524,-73.82786,718-888-7520,7:50 AM,2:40 PM,275,12.70%,13.80%,52.40%,20.00%,,,,,Hispanic
-25Q281,East-West School of International Studies,Queens,Q237,46-21 Colden Street,Flushing,NY,11355,40.7493,-73.82181,718-353-0009,7:50 AM,3:00 PM,666,5.30%,14.90%,18.30%,60.70%,521,457,451,89.40%,Hispanic
-25Q263,Flushing International High School,Queens,Q189,144-80 Barclay Avenue,Flushing,NY,11355,40.76041,-73.81838,718-463-2348,8:40 AM,3:30 PM,437,2.50%,2.50%,38.40%,55.60%,481,323,323,67.70%,Hispanic
+25Q281,East-West School of International Studies,Queens,Q237,46-21 Colden Street,Flushing,NY,11355,40.7493,-73.82181,718-353-0009,7:50 AM,3:00 PM,666,5.30%,14.90%,18.30%,60.70%,521,457,451,89.40%,Asian
+25Q263,Flushing International High School,Queens,Q189,144-80 Barclay Avenue,Flushing,NY,11355,40.76041,-73.81838,718-463-2348,8:40 AM,3:30 PM,437,2.50%,2.50%,38.40%,55.60%,481,323,323,67.70%,Asian
 25Q285,World Journalism Preparatory (College Board),Queens,Q025,34-65 192nd Street,Flushing,NY,11358,40.76512,-73.79006,718-461-2219,8:00 AM,3:00 PM,610,50.30%,9.10%,22.70%,15.80%,484,491,487,89.20%,White
-26Q495,Bayside High School,Queens,Q405,32-24 Corporal Kennedy Street,Bayside,NY,11361,40.77187,-73.78039,718-229-7600,8:00 AM,3:30 PM,3336,18.10%,13.00%,27.90%,40.30%,523,479,485,76.70%,Hispanic
-26Q415,Benjamin N. Cardozo High School,Queens,Q415,57-00 223rd Street,Oakland Gardens,NY,11364,40.75239,-73.75608,718-279-6500,9:00 AM,4:00 PM,3505,14.90%,20.30%,19.40%,44.10%,563,505,510,75.60%,Black
-26Q430,Francis Lewis High School,Queens,Q430,58-20 Utopia Parkway,Fresh Meadows,NY,11365,40.74056,-73.79285,718-281-8200,8:30 AM,3:15 PM,4172,14.90%,7.40%,23.10%,53.90%,562,483,485,80.70%,Hispanic
-25Q252,Queens School of Inquiry,Queens,Q168,158-40 76th Road,Fresh Meadows,NY,11366,40.72452,-73.80943,718-380-6929,8:38 AM,2:57 PM,557,19.20%,19.50%,21.80%,36.20%,516,493,486,88.20%,Hispanic
+26Q495,Bayside High School,Queens,Q405,32-24 Corporal Kennedy Street,Bayside,NY,11361,40.77187,-73.78039,718-229-7600,8:00 AM,3:30 PM,3336,18.10%,13.00%,27.90%,40.30%,523,479,485,76.70%,Asian
+26Q415,Benjamin N. Cardozo High School,Queens,Q415,57-00 223rd Street,Oakland Gardens,NY,11364,40.75239,-73.75608,718-279-6500,9:00 AM,4:00 PM,3505,14.90%,20.30%,19.40%,44.10%,563,505,510,75.60%,Asian
+26Q430,Francis Lewis High School,Queens,Q430,58-20 Utopia Parkway,Fresh Meadows,NY,11365,40.74056,-73.79285,718-281-8200,8:30 AM,3:15 PM,4172,14.90%,7.40%,23.10%,53.90%,562,483,485,80.70%,Asian
+25Q252,Queens School of Inquiry,Queens,Q168,158-40 76th Road,Fresh Meadows,NY,11366,40.72452,-73.80943,718-380-6929,8:38 AM,2:57 PM,557,19.20%,19.50%,21.80%,36.20%,516,493,486,88.20%,Asian
 25Q670,Robert F. Kennedy Community High School,Queens,Q707,75-40 Parsons Boulevard,Fresh Meadows,NY,11366,40.7256,-73.81072,718-969-5510,8:00 AM,2:30 PM,701,18.30%,13.00%,35.50%,31.20%,460,426,423,67.30%,Hispanic
 25Q425,John Bowne High School,Queens,Q425,63-25 Main Street,Flushing,NY,11367,40.7387,-73.82479,718-263-1919,9:08 AM,3:47 PM,3667,4.50%,18.40%,46.00%,29.40%,467,422,425,62.10%,Hispanic
-25Q525,Townsend Harris High School,Queens,Q515,149-11 Melbourne Avenue,Flushing,NY,11367,40.73441,-73.82142,718-575-5580,8:20 AM,3:00 PM,1132,21.90%,6.30%,11.60%,58.60%,680,640,661,97.10%,White
+25Q525,Townsend Harris High School,Queens,Q515,149-11 Melbourne Avenue,Flushing,NY,11367,40.73441,-73.82142,718-575-5580,8:20 AM,3:00 PM,1132,21.90%,6.30%,11.60%,58.60%,680,640,661,97.10%,Asian
 24Q550,High School for Arts and Business,Queens,Q456,105-25 Horace Harding Expressway,Corona,NY,11368,40.73742,-73.85331,718-271-8383,8:45 AM,4:00 PM,870,4.10%,7.80%,77.20%,10.20%,413,405,393,76.70%,Hispanic
 24Q293,Civic Leadership Academy,Queens,Q744,45-10 94th Street,Elmhurst,NY,11373,40.7433,-73.87057,718-271-1487,8:30 AM,3:30 PM,479,5.60%,7.90%,71.80%,9.80%,435,424,418,68.90%,Hispanic
 24Q585,Maspeth High School,Queens,Q585,54-40 74th Street,Elmhurst,NY,11373,40.72954,-73.88739,718-803-7100,8:15 AM,3:05 PM,973,35.80%,2.00%,44.60%,17.50%,476,471,480,90.00%,Hispanic
@@ -414,16 +414,16 @@ School ID,School Name,Borough,Building Code,Street Address,City,State,Zip Code,L
 26Q566,"Queens High School of Teaching, Liberal Arts, and the Sciences",Queens,Q566,74-20 Commonwealth Boulevard,Bellerose,NY,11426,40.7449,-73.72691,718-736-7100,8:30 AM,3:30 PM,1120,8.40%,48.10%,17.50%,24.80%,453,434,439,72.40%,Black
 26Q315,Business Technology Early College High School,Queens,Q435,230-17 Hillside Avenue,Queens Village,NY,11427,40.73282,-73.73965,718-935-3651,8:30 AM,4:00 PM,112,8.00%,32.10%,28.60%,22.30%,,,,,Black
 26Q435,Martin Van Buren High School,Queens,Q435,230-17 Hillside Avenue,Queens Village,NY,11427,40.73282,-73.73965,718-776-4728,7:45 AM,3:14 PM,1742,3.60%,52.70%,13.00%,27.00%,397,396,391,40.00%,Black
-28Q680,Queens Gateway to Health Sciences Secondary School,Queens,Q695,160-20 Goethals Avenue,Jamaica,NY,11432,40.71881,-73.8065,718-969-3155,8:00 AM,2:30 PM,779,2.90%,38.20%,14.20%,43.30%,524,511,514,92.50%,Black
+28Q680,Queens Gateway to Health Sciences Secondary School,Queens,Q695,160-20 Goethals Avenue,Jamaica,NY,11432,40.71881,-73.8065,718-969-3155,8:00 AM,2:30 PM,779,2.90%,38.20%,14.20%,43.30%,524,511,514,92.50%,Asian
 28Q350,Jamaica Gateway to the Sciences,Queens,Q470,167-01 Gothic Drive,Jamaica,NY,11432,40.71358,-73.79652,718-480-2689,8:15 AM,3:00 PM,516,2.30%,42.60%,10.90%,40.70%,487,460,463,78.60%,Black
 28Q328,High School for Community Leadership,Queens,Q470,167-01 Gothic Drive,Jamaica,NY,11432,40.71358,-73.79652,718-558-9801,9:00 AM,3:45 PM,418,4.50%,42.30%,26.60%,22.70%,415,392,386,72.30%,Black
 28Q896,Young Women's Leadership School in Queens,Queens,Q680,150-91 87th Road,Jamaica,NY,11432,40.70821,-73.80408,718-725-0402,8:00 AM,2:57 PM,557,1.90%,47.50%,19.70%,26.90%,415,420,433,90.40%,Black
 28Q310,Queens Collegiate (College Board),Queens,Q470,167-01 Gothic Drive,Jamaica,NY,11432,40.71358,-73.79652,718-658-4016,8:15 AM,3:00 PM,661,4.10%,53.40%,16.10%,24.80%,455,439,441,74.80%,Black
-28Q505,Hillcrest High School,Queens,Q505,160-05 Highland Avenue,Jamaica,NY,11432,40.70876,-73.80213,718-658-5407,8:00 AM,3:30 PM,3286,3.80%,30.30%,28.80%,34.50%,448,432,426,51.80%,Black
-28Q620,Thomas A. Edison Career and Technical Education High School,Queens,Q620,165-65 84th Avenue,Jamaica,NY,11432,40.71588,-73.79882,718-297-6580,8:00 AM,3:30 PM,2098,4.20%,20.90%,22.40%,49.00%,514,473,470,80.00%,Hispanic
+28Q505,Hillcrest High School,Queens,Q505,160-05 Highland Avenue,Jamaica,NY,11432,40.70876,-73.80213,718-658-5407,8:00 AM,3:30 PM,3286,3.80%,30.30%,28.80%,34.50%,448,432,426,51.80%,Asian
+28Q620,Thomas A. Edison Career and Technical Education High School,Queens,Q620,165-65 84th Avenue,Jamaica,NY,11432,40.71588,-73.79882,718-297-6580,8:00 AM,3:30 PM,2098,4.20%,20.90%,22.40%,49.00%,514,473,470,80.00%,Asian
 28Q325,Hillside Arts and Letters Academy,Queens,Q470,167-01 Gothic Drive,Jamaica,NY,11432,40.71358,-73.79652,718-658-1249,8:15 AM,3:00 PM,464,3.00%,37.70%,24.40%,27.80%,409,399,404,62.60%,Black
 28Q284,York Early College Academy,Queens,Q008,108-35 167th Street,Jamaica,NY,11433,40.69694,-73.78698,718-262-8547,8:00 AM,3:00 PM,611,1.20%,58.00%,10.30%,28.70%,496,481,473,92.90%,Black
-28Q687,Queens High School for the Sciences at York College,Queens,Q774,94-50 159th Street,Jamaica,NY,11433,40.701,-73.79815,718-657-3181,8:00 AM,3:18 PM,426,6.10%,7.00%,10.60%,75.40%,701,621,625,97.90%,Hispanic
+28Q687,Queens High School for the Sciences at York College,Queens,Q774,94-50 159th Street,Jamaica,NY,11433,40.701,-73.79815,718-657-3181,8:00 AM,3:18 PM,426,6.10%,7.00%,10.60%,75.40%,701,621,625,97.90%,Asian
 28Q690,High School for Law Enforcement and Public Safety,Queens,Q690,116-25 Guy R Brewer Boulevard,Jamaica,NY,11434,40.68618,-73.78408,718-977-4800,8:00 AM,3:00 PM,604,1.80%,66.40%,18.90%,10.40%,410,431,409,56.60%,Black
 29Q327,Eagle Academy for Young Men III,Queens,Q633,171-10 Linden Boulevard,Jamaica,NY,11434,40.69167,-73.77903,718-480-2600,8:45 AM,4:45 PM,428,1.80%,86.30%,5.40%,0.60%,,,,,Black
 27Q400,August Martin High School,Queens,Q400,156-10 Baisley Boulevard,Jamaica,NY,11434,40.67553,-73.78343,718-528-2920,8:00 AM,3:30 PM,679,1.50%,75.40%,13.00%,7.50%,366,372,364,26.30%,Black
